@@ -1,10 +1,15 @@
-:root{
-    --bs-primary:#EF4623 !important;
+:root {
+    --bs-primary: #EF4623 !important;
 }
-.navbar-nav .active{
+.logoimage {
+    height: 50px;
+}
+
+.navbar-nav .active {
     color: #EF4623 !important;
 }
-.sp-booknow{
+
+.sp-booknow {
     border: 1px solid #EF4623;
     color: #EF4623;
     text-align: center;
@@ -13,38 +18,48 @@
     justify-content: center;
     transition: all 0.3s ease;
 }
-.sp-booknow:hover{
+
+.sp-booknow:hover {
     background-color: #EF4623;
     color: #FFF;
 }
-.sp-priceWrap .price{
+
+.sp-priceWrap .price {
     color: #3F8C68;
 }
-.sp-priceWrap .text{
+
+.sp-priceWrap .text {
     color: black;
     font-size: 14px;
     font-weight: 400;
 }
-.sp-prvPrice{
+
+.sp-prvPrice {
     color: rgba(0, 0, 0, 0.79);
     font-size: 12px;
     text-decoration: line-through;
 }
-.color-green{
+
+.color-green {
     color: #55a455;
 }
-.color-red{
+
+.color-red {
     color: red !important;
 }
-.priceListWrap li .text , .sp-priceListSecWrap li .text{
+
+.priceListWrap li .text,
+.sp-priceListSecWrap li .text {
     font-size: 16px;
     line-height: 1.5;
 }
-.sp-priceListSecWrap p{
+
+.sp-priceListSecWrap p {
     color: black;
     font-weight: 600;
 }
-.sp-banner{
+
+.sp-banner {
     position: absolute;
     top: 0;
     right: 0;
@@ -55,7 +70,8 @@
     color: #FFF;
     z-index: 1;
 }
-.sp-fillterWrap button{
+
+.sp-fillterWrap button {
     color: var(--bs-primary);
     background-color: transparent;
     border: 1px solid #EF4623;
@@ -64,13 +80,42 @@
     font-weight: 500;
     transition: all 0.5s ease;
 }
-.sp-fillterWrap button:hover{
+
+.sp-fillterWrap button:hover {
     background-color: #EF4623;
     color: #FFF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.sp-fillterWrap .sp-btn{
+
+.sp-fillterWrap .sp-btn {
     background-color: #EF4623;
     color: #FFF;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.marquee {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+    flex: 0 0 auto;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
