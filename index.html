@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="csrf-token" content="uBngu342uHOF8S9q3v1ZCioZAiqKf7MJ9DdW7D9x" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta property="og:title" content="BookingDo SaaS - Multi Business Appointment, Service Booking SaaS" />
+    <meta property="og:description"
+        content="Booking Do is a complete SaaS based multi business service booking software, that gives your users the ability to create and manage bookings, services, customers, etc. Users also can create their own business page, receive online payments from customers and easily keep track of their online business in one platform." />
+    <meta property="og:image"
+        content='https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/og_image/og_image-65d8683f23cbf.png' />
+
+
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/bootstrap/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://bookingdo.paponapps.co.in/storage/app/public/front/webfonts/css/all.min.css" />
+    <link rel="stylesheet" href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/glightbox.css">
+    <!-- glightbox css -->
+
+
+    <link rel="stylesheet" href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/font.css" />
+
+
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/css/sweetalert/sweetalert2.min.css">
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/calander/fullcalendar.min.css">
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/css/toastr/toastr.min.css">
+    <link rel="stylesheet" href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/style.css" />
+    <link rel="stylesheet" href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/responsive.css">
+    <link rel="stylesheet"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/css/datatables/dataTables.bootstrap5.min.css">
+    <!-- wow animation css -->
+    <link rel="stylesheet" href="https://bookingdo.paponapps.co.in/storage/app/public/front/css/wow.css" />
+    <link rel="icon" type="image" sizes="16x16"
+        href="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/favicon/favicon-65eee65d8ce04.png">
+    <!-- Favicon icon -->
+    <title>Book Your Perfect Studio Space Today</title>
+    <!-- PWA  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="theme-color" content="#000000">
+    <meta name="background-color" content="#3595d5">
+    <link rel="apple-touch-icon" href="./Color1.png">
+
+    <link rel="manifest"
+        href='data:application/manifest+json,{"name": "Events &amp; Entertainment","short_name": "Events &amp; Entertainment","icons": [{"src": "./Color1.png", "sizes": "512x512", "type": "image/png"}, {"src": "https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/logo/logo-65eee6690785f.png", "sizes": "1024x1024", "type": "image/png"}, {"src": "https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/logo/logo-65eee6690785f.png", "sizes": "1024x1024", "type": "image/png"}], "start_url": "https://bookingdo.paponapps.co.in/theme-2","display": "standalone","prefer_related_applications":"false" }'>
+
+    <link rel="stylesheet" href="style.css">
+
+    <div class="d-sm-none d-block">
+        <nav class="drop-down mobile_drop_down px-3  install-app-div" id="install-app">
+            <p class="nav02">
+                <i class="fa-solid fa-xmark fs-2 fw-normal"></i>
+            </p>
+            <div class="px-3">
+                <h5 class="text-white mb-1">Book Your Perfect Studio Space Today</h5>
+                <p>Get our PWA in your device. It won't take up space in your device</p>
+            </div>
+            <button class="btn-sm fs-6 mobile-install-btn" id="mobile-install-app">Install</button>
+        </nav>
+    </div> <!-- PWA  -->
+
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Twitter conversion tracking base code -->
+    <script>
+        ! function (e, t, n, s, u, a) {
+            e.twq || (s = e.twq = function () {
+                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src =
+                'https://static.ads-twitter.com/uwt.js',
+                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
+        }(window, document, 'script');
+        twq('config', ''); // WEB ID
+    </script>
+    <!-- End Twitter conversion tracking base code -->
+
+    <!-- Linkedin conversion tracking base code -->
+    <script type="text/javascript">
+        _linkedin_partner_id = ""; //partner ID
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+    </script>
+    <script type="text/javascript">
+        (function (l) {
+            if (!l) {
+                window.lintrk = function (a, b) {
+                    window.lintrk.q.push([a, b])
+                };
+                window.lintrk.q = []
+            }
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript";
+            b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })(window.lintrk);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt=""
+            src="https://px.ads.linkedin.com/collect/?pid=&fmt=gif" />
+    </noscript>
+    <!-- End Linkedin conversion tracking base code -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', '');
+    </script>
+    <!-- Google tag (gtag.js)  END-->
+    <style>
+        :root {
+            --bs-primary: #ff2d52;
+            --bs-secondary: #000000;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- offer banner -->
+    <!-- <div class="top-bar bg-primary d-flex align-items-center py-2 ">
+        <marquee direction="right" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+            <span>Special Booking Offer : SPECIAL30</span>
+            <span>Unlock The Magic 50% Offer : MAGIC50</span>
+            <span>Online Booking 20% Off : ONLINE20</span>
+            <span>Dream Booking Offer : OFF10</span>
+            <span>Today Event Offer 40% Off : TODAY40</span>
+        </marquee>
+    </div> -->
+    <!-- offer banner -->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-background sticky-top shadow-sm">
+        <div class="container container-position">
+            <a class="navbar-brand" href="#"><img src="./Color1.png" class="logoimage" alt=""></a>
+
+            <div class="d-flex gap-2 align-items-center ms-auto">
+
+                <!--------- new tablet language button --------->
+
+                <div class="dropdown d-block d-lg-none">
+                    <a class="btn btn-group dropdown-toggle d-flex align-items-center" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/language/flag-65f136d1cb0b5.webp"
+                            alt="" class="language-dropdown-image">
+                    </a>
+                    <ul class="dropdown-menu user-dropdown-menu dropdown-menu-ltr">
+                        <li>
+                            <a class="dropdown-item language-items" href="#">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/language/flag-65f136d1cb0b5.webp"
+                                    alt="" class="language-items-img">
+                                <p>English</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item language-items" href="#">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/language/flag-65f136e6e0b19.png"
+                                    alt="" class="language-items-img">
+                                <p>Arabic</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--------- new tablet language button --------->
+                <!------ day-night btn ------>
+
+
+                <!------ day-night btn ------>
+            </div>
+            <div class="collapse navbar-collapse" id="Menu">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-center me-auto ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text active" aria-current="page" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " href="">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " href="">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " href="">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " href="">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " href="">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-text " href="">FAQs</a>
+                    </li>
+                </ul>
+                <!-- dekstop-language-dropdown-button-start-->
+
+                <!--------- new dekstop language button --------->
+                <div class="btn-group">
+                    <a class="nav-link d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/language/flag-65f136d1cb0b5.webp"
+                            alt="" class="language-dropdown-image">
+                    </a>
+                    <ul class="dropdown-menu user-dropdown-menu drop-menu">
+                        <li>
+                            <a class="dropdown-item language-items" href="#">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/language/flag-65f136d1cb0b5.webp"
+                                    alt="" class="language-items-img">
+                                <p>English</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item language-items" href="#">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/language/flag-65f136e6e0b19.png"
+                                    alt="" class="language-items-img">
+                                <p>Arabic</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--------- new language button --------->
+
+                <!-- day-night btn -->
+
+                <!-- day-night btn -->
+
+                <!-- dekstop-language-dropdown-button--end-->
+                <a href="#" class="btn btn-outline-primary rounded-3 mx-2"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="collapse  collapse-horizontal" id="slide">
+                <ul class="navbar-nav sidebar-li d-lg-none d-md-block mb-2 mb-lg-0 p-4 sidebar  ">
+                    <li class="nav-item">
+                        <button class="close-btn" data-bs-toggle="collapse" data-bs-target="#slide"
+                            aria-controls="slide" aria-expanded="false"><i class="fa-solid fa-xmark"></i></button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="">Contact
+                            Us</a>
+                    </li>
+                    <a href="" class="btn btn-outline-primary bg-primary text-white rounded-3">Login</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="mobile-menu-footer">
+        <ul class="p-0 m-0">
+            <li class="mobile-active">
+                <a href="">
+                    <i class="fa-regular fa-house"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="">
+                    <i class="fa-regular fa-gear"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="">
+                <a href="">
+                    <i class="fa-regular fa-box-archive"></i>
+                    <span>Category</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!---------------------------------------------------- subscription popup ---------------------------------------------------->
+    <!-- Modal -->
+    <div class="modal subscription-popup fade" id="subsciptionmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-lights">
+                <div class="modal-body p-md-0">
+                    <div class="card rounded-4 border-0 bg-lights p-md-3">
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="row align-items-center">
+
+                            <div class="col-4 d-none d-lg-block">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/index/subscription-64d4886ac8a7f.webp"
+                                    alt="" class="w-100 object-fit-cover rounded-4">
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <h2 class="subscribe-title">Stay Connected with BookingDo Subscribe to Our Email Updates
+                                </h2>
+                                <p class="fw-light">Subscribe to our email updates and stay in the loop with the latest
+                                    news, insights, and exciting developments. Join our community to receive curated
+                                    content, exclusive offers, and valuable resources delivered right to your inbox.</p>
+                                <form action="https://bookingdo.paponapps.co.in/theme-2/subscribe" method="post">
+                                    <input type="hidden" name="_token" value="uBngu342uHOF8S9q3v1ZCioZAiqKf7MJ9DdW7D9x">
+                                    <div class="bg-body rounded-2 p-2 shadow-sm rounded-4 mb-3 mb-md-0">
+                                        <div class="input-group">
+                                            <input class="form-control border-0 me-1" type="email" name="email"
+                                                placeholder="Enter your email" required>
+                                            <button type="submit"
+                                                class="btn btn-primary rounded-2 mb-0 btn-submit rounded-4 d-none d-md-inline-block">Subscribe!</button>
+                                        </div>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn w-100 btn-primary rounded-2 mb-0 btn-submit rounded-4 d-inline-block d-md-none">Subscribe!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------- subscription popup ---------------------------------------------------->
+    <div>
+        <!-- home-banner -->
+        <section class="home-banner bg-lights">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-end">
+                    <div class="col-lg-6 col-12 banner-content">
+                        <div class="col-xl-8 col-10  mx-auto">
+                            <div class="section-search">
+                                <p class="fs-6 fw-medium text-primary-color">
+                                    Book Your Perfect Studio Space Today
+                                </p>
+                                <h1 class="fw-bold home-subtitle m-0 mb-4">
+                                    Seamless, Flexible, and Convenient Studio Rentals
+                                </h1>
+                                <p class="mb-4 text-muted ">Find and book the perfect studio space effortlessly. Ideal
+                                    for photographers, musicians, and creatives, all in a few clicks.</p>
+                                <!-- <form action="https://bookingdo.paponapps.co.in/theme-2/services" method="get"
+                                    class="bg-body rounded-2 p-2 shadow-sm rounded-4 mb-5">
+                                    <div class="input-group">
+                                        <input class="form-control border-0 rounded-2" type="text"
+                                            placeholder="Search Service Name" value="">
+                                        <button type="submit"
+                                            class="btn btn-primary rounded-2 mb-0 btn-submit px-md-4 px-3">
+                                            <i class="fa-solid fa-magnifying-glass pe-2"></i>Search</button>
+                                    </div>
+                                </form> -->
+                                <!-- avatar -->
+                                <div>
+                                    <ul class="avatar-group mb-0 mx-auto mx-lg-0 justify-content-center mb-3">
+                                        <li class="avatar avatar-sm">
+                                            <img class="avatar-img rounded-circle"
+                                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64ccb79f1ff4b.jpg"
+                                                alt="avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm">
+                                            <img class="avatar-img rounded-circle"
+                                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64ccb7d72044c.jpg"
+                                                alt="avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm">
+                                            <img class="avatar-img rounded-circle"
+                                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64d4bf8001ca9.jpeg"
+                                                alt="avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm">
+                                            <img class="avatar-img rounded-circle"
+                                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64d4bf8689aac.jpeg"
+                                                alt="avatar">
+                                        </li>
+                                        <li class="avatar avatar-sm">
+                                            <img class="avatar-img rounded-circle"
+                                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64d71a301d59b.jpeg"
+                                                alt="avatar">
+                                        </li>
+                                    </ul>
+                                    <p class="text-muted text-center m-0 px-4 text-truncate">
+                                        100 Peoples booked services
+                                    </p>
+                                </div>
+                                <!-- avatar -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 px-0 d-none d-lg-block">
+                        <img src="https://assets.lummi.ai/assets/Qmc8SqVoyBnBuebcLFTNiGdFiqbPsWf7hm2FbsQah9fqJz?auto=format&w=1500"
+                            alt="" class="w-100 object-fit-cover" style="height: 700px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- home-banner -->
+
+        <!-- category section -->
+        <section class="d-none">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h3 class="fw-bold fs-3 text-truncate">See All Category</h3>
+                    <p class="text-font text-muted m-0 text-truncate">Top Categories</p>
+                </div>
+                <div class="row justify-content-center g-3">
+                    <div class=" col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="row align-items-center flex-column gap-2">
+                            <!-- Image -->
+                            <div class="col-5">
+                                <img src="https://assets.lummi.ai/assets/QmXUTwp6kJngkmv7WCYo4B5PXiLwKwyAEaiSsUvUA4XBHn?auto=format&w=1500"
+                                    class="card-img-top rounded-4 object-fit-cover" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="col-7">
+                                <div class="p-2 p-md-0">
+                                    <h5 class="mb-1 fw-bold text-center service-cardtitle"><a href="">Photography
+                                            Studios</a>
+                                    </h5>
+                                    <!-- <P class="fs-7 text-muted m-0 text-truncate">
+                                        Services
+                                        4+
+                                    </P> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="row align-items-center flex-column gap-2">
+                            <!-- Image -->
+                            <div class="col-5">
+                                <img src="https://assets.lummi.ai/assets/QmaPP33iwExprTjg4gk8RKQZJJ321QVBFigoHwQAdDh5DD?auto=format&w=1500"
+                                    class="card-img-top rounded-4 object-fit-cover" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="col-7">
+                                <div class="p-2 p-md-0">
+                                    <h5 class="mb-1 fw-bold text-center service-cardtitle"><a href="#">Music Studios</a>
+                                    </h5>
+                                    <!-- <P class="fs-7 text-muted m-0 text-truncate">
+                                        Services
+                                        2+
+                                    </P> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="row align-items-center  flex-column gap-2">
+                            <!-- Image -->
+                            <div class="col-5">
+                                <img src="https://assets.lummi.ai/assets/QmSe92mKDbnNCjJZokW3P4RodJCexvsowD7Xa6ocggvrvu?auto=format&w=1500"
+                                    class="card-img-top rounded-4 object-fit-cover" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="col-7">
+                                <div class="p-2 p-md-0">
+                                    <h5 class="mb-1 fw-bold text-center service-cardtitle"><a href="#">Art Studios</a>
+                                    </h5>
+                                    <!-- <P class="fs-7 text-muted m-0 text-truncate">
+                                        Services
+                                        8+
+                                    </P> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="row align-items-center flex-column gap-2">
+                            <!-- Image -->
+                            <div class="col-5">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/categories/category-64b0de8a6ba51.webp"
+                                    class="card-img-top rounded-4 object-fit-cover" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="col-7">
+                                <div class="p-2 p-md-0">
+                                    <h5 class="mb-1 fw-bold text-center service-cardtitle"><a href="#">Dance Studios</a>
+                                    </h5>
+                                    <!-- <P class="fs-7 text-muted m-0 text-truncate">
+                                        Services
+                                        3+
+                                    </P> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center py-5">
+                    <a class="fs-6 fw-semibold btn btn-primary-rgb" href="">View All <i
+                            class=" mx-1 fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Category Section -->
+
+        <!-- banner section-1  -->
+        <section class="d-none">
+            <div class="container">
+                <div class="card-carousel owl-carousel owl-loaded">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage carousel">
+                            <div class="owl-item">
+                                <div class="card-top">
+                                    <div class="card-overlay">
+                                        <a href="">
+                                            <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/banner/banner-64199a30a8ab2.jpg"
+                                                class="card-imp-top" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="card-top">
+                                    <div class="card-overlay">
+                                        <a href="">
+                                            <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/banner/banner-64199ab61f212.jpg"
+                                                class="card-imp-top" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="card-top">
+                                    <div class="card-overlay">
+                                        <a href="">
+                                            <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/banner/banner-64199a95df89b.jpg"
+                                                class="card-imp-top" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner secction-1 -->
+
+        <!-- service section -->
+        <section class="service-div w-100">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h3 class="fw-bold fs-3">Services</h3>
+                    <p class="text-font text-muted m-0">Our Populer
+                        Services
+                    </p>
+                </div>
+                <div class="sp-fillterWrap d-flex justify-content-center flex-wrap gap-3 pb-4">
+                    <button class="sp-btn">Basic Equipment</button>
+                    <button>Advanced Equipment</button>
+                    <button>Video Recording</button>
+                    <button>Video Recording & Audio</button>
+                    <!-- <button>Audio</button> -->
+
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="card shadow h-100 w-100 border-0 rounded-4 overflow-hidden p-2">
+                            <div class="sp-banner">
+                                Best deal
+                            </div>
+                            <div class="overflow-hidden rounded-4 img-over">
+                                <img src="https://assets.lummi.ai/assets/QmW9w3YS9k1nPytut5jWv31bJBWTnug6wcgk1yqSVc8yHE?auto=format&w=1500"
+                                    class="card-img-top rounded-4 w-100" alt="...">
+                            </div>
+                            <div class="card-body pb-0 px-2">
+                                <div class="card-text">
+                                    <!-- <div class="d-flex justify-content-between mb-3">
+                                        <div
+                                            class="badge bg-dark text-white d-flex align-items-center justify-content-center fw-semibold">
+                                            <i class="fas fa-star fa-fw text-warning me-2"></i>
+                                            <span class="fs-7">0.0</span>
+                                        </div>
+                                        <div class="float-end">
+                                            <a onclick=""
+                                                class="fs-5">
+                                                <i class="fa-regular fa-heart"></i>
+                                            </a>
+                                        </div>
+                                    </div> -->
+                                    <h5 class="mb-0 fw-bold text_truncation2 service-cardtitle">
+                                        <a href="">Audio & Video (3C) – PRO</a>
+                                    </h5>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <small class="fs-7 text-muted text-truncate">Promo price</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer pt-0 pb-3 px-2">
+                                <span class="sp-prvPrice">SAR 500.00</span>
+                                <div class="d-flex flex-column gap-2">
+                                    <p class="sp-priceWrap fw-bold my-0 text-success text-truncate">
+                                        <span class="price">
+                                            SAR 449.00
+                                        </span>
+                                        <span class="text">
+                                            / per hour
+                                        </span>
+                                    </p>
+                                    <a href=""
+                                        class="booknow sp-booknow d-flex text-primary-color fw-semibold align-items-center">
+                                        Book Now
+                                        <i class=" mx-1 fa-solid fa-arrow-right-long"></i></a>
+
+                                </div>
+                                <div class="sp-priceListWrap pt-4">
+                                    <ul class="d-flex gap-1 flex-column">
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">4x Shure SM7B mics</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">RodecasterPro Audio Mixer</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Professionally Sound Treated Room</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Studio operator</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Full studio lights</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">3x Sony FX30 Cameras</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Live audio and video mixing (receive the synced episode
+                                                right after the session)</span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="sp-priceListSecWrap pt-4">
+                                    <p>What you get after the session:</p>
+                                    <ul class="d-flex gap-1 flex-column mt-1">
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">4x Shure SM7B mics</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">RodecasterPro Audio Mixer</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Professionally Sound Treated Room</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="card shadow h-100 w-100 border-0 rounded-4 overflow-hidden p-2">
+                            <div class="sp-banner">
+                                Promo price
+                            </div>
+                            <div class="overflow-hidden rounded-4 img-over">
+                                <img src="https://images.unsplash.com/photo-1603425013520-e0b30e6e37dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHN0dWRpb3xlbnwwfHwwfHx8MA%3D%3D"
+                                    class="card-img-top rounded-4 w-100" alt="...">
+                            </div>
+                            <div class="card-body pb-0 px-2">
+                                <div class="card-text">
+                                    <h5 class="mb-0 fw-bold text_truncation2 service-cardtitle">
+                                        <a href="">Recording Audio & Video (3 Cameras)</a>
+                                    </h5>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <small class="fs-7 text-muted text-truncate">Promo price</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer pt-0 pb-3 px-2">
+                                <span class="sp-prvPrice">SAR 400.00</span>
+                                <div class="d-flex flex-column gap-2">
+                                    <p class="sp-priceWrap fw-bold my-0 text-success text-truncate">
+                                        <span class="price">
+                                            SAR 349.00
+                                        </span>
+                                        <span class="text">
+                                            / per hour
+                                        </span>
+                                    </p>
+                                    <a href=""
+                                        class="booknow sp-booknow d-flex text-primary-color fw-semibold align-items-center">
+                                        Book Now
+                                        <i class=" mx-1 fa-solid fa-arrow-right-long"></i></a>
+
+                                </div>
+                                <div class="sp-priceListWrap pt-4">
+                                    <ul class="d-flex gap-1 flex-column">
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">4x Shure SM7B mics</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">RodecasterPro Audio Mixer</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Professionally Sound Treated Room</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Studio operator</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Full studio lights</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">3x Sony FX30 Cameras</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">Live audio and video mixing (receive the synced episode
+                                                right after the session)</span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="sp-priceListSecWrap pt-4">
+                                    <p>What you get after the session:</p>
+                                    <ul class="d-flex gap-1 flex-column mt-1">
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">4x Shure SM7B mics</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">RodecasterPro Audio Mixer</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">Professionally Sound Treated Room</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="card shadow h-100 w-100 border-0 rounded-4 overflow-hidden p-2">
+                            <div class="sp-banner">
+                                Exclusive
+                            </div>
+                            <div class="overflow-hidden rounded-4 img-over">
+                                <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3R1ZGlvfGVufDB8fDB8fHww"
+                                    class="card-img-top rounded-4 w-100" alt="...">
+                            </div>
+                            <div class="card-body pb-0 px-2">
+                                <div class="card-text">
+                                    <h5 class="mb-0 fw-bold text_truncation2 service-cardtitle">
+                                        <a href="">Recording Audio Only</a>
+                                    </h5>
+                                    <div class="d-flex align-items-center justify-content-between my-2">
+                                        <small class="fs-7 text-muted text-truncate">Make your next live audience
+                                            podcast stand-out!</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer pt-0 pb-3 px-2">
+                                <span class="sp-prvPrice">SAR 400.00</span>
+                                <div class="d-flex flex-column gap-2">
+                                    <p class="sp-priceWrap fw-bold my-0 text-success text-truncate">
+                                        <span class="price">
+                                            SAR 349.00
+                                        </span>
+                                        <span class="text">
+                                            / per hour
+                                        </span>
+                                    </p>
+                                    <a href=""
+                                        class="booknow sp-booknow d-flex text-primary-color fw-semibold align-items-center">
+                                        Book Now
+                                        <i class=" mx-1 fa-solid fa-arrow-right-long"></i></a>
+
+                                </div>
+                                <div class="sp-priceListWrap pt-4">
+                                    <ul class="d-flex gap-1 flex-column">
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">4x Shure SM7B mics</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">RodecasterPro Audio Mixer</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Professionally Sound Treated Room</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">Studio operator</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">Full studio lights</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">3x Sony FX30 Cameras</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">Live audio and video mixing (receive the synced episode
+                                                right after the session)</span></li>
+
+                                    </ul>
+                                </div>
+                                <div class="sp-priceListSecWrap pt-4">
+                                    <p>What you get after the session:</p>
+                                    <ul class="d-flex gap-1 flex-column mt-1">
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="fa-solid color-green fa-circle-check"></i></span> <span
+                                                class="text">4x Shure SM7B mics</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">RodecasterPro Audio Mixer</span></li>
+                                        <li class="d-flex align-items-start gap-2"><span><i
+                                                    class="color-red fa-solid fa-circle-xmark"></i></span> <span
+                                                class="text">Professionally Sound Treated Room</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center py-5">
+                    <a class="fw-semibold btn btn-primary-rgb" href="#">View All <i
+                            class=" mx-1 fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------- Why choose section start ------------------------------------------------->
+        <section class="why-choose bg-primary-rgb">
+            <div class="container">
+                <div class="row justify-content-between align-items-center py-10">
+                    <!-- Right side START -->
+                    <div class="col-lg-6 mb-5 mb-lg-0 col-12 choose-content">
+                        <h2 class="pb-1 fw-bold text_truncation2 fs-1">
+                            The Best Online Appointment Booking!
+                        </h2>
+                        <p class="mb-2 mb-lg-5 text-muted text_truncation3">
+                            When choosing the best platform for your needs, consider factors like your business size,
+                            budget, specific requirements ease of use, and any unique features that stand out to you
+                        </p>
+
+                        <!-- Features START -->
+                        <div class="row g-4">
+                            <!-- Item -->
+                            <div class="col-sm-6">
+                                <div class="">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/index/choose-64d4bd0460d5b.png"
+                                        class="icon-lg bg-success bg-opacity-10 text-success rounded-circle" alt="">
+                                    <h5 class="fw-bold text-truncate mt-2">Seamless User Experience</h5>
+                                    <p class="mb-0 text-muted text_truncation2">Booking SaaS System offers a seamless
+                                        user experience</p>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-sm-6">
+                                <div class="">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/index/choose-64d4bd0b05ba0.png"
+                                        class="icon-lg bg-success bg-opacity-10 text-success rounded-circle" alt="">
+                                    <h5 class="fw-bold text-truncate mt-2">Customisable &amp; Scalable</h5>
+                                    <p class="mb-0 text-muted text_truncation2">We pride a highly customisable and
+                                        scalable online appointment</p>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-sm-6">
+                                <div class="">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/index/choose-64d4bd1552b98.png"
+                                        class="icon-lg bg-success bg-opacity-10 text-success rounded-circle" alt="">
+                                    <h5 class="fw-bold text-truncate mt-2">Robust Feature Set</h5>
+                                    <p class="mb-0 text-muted text_truncation2">set of features designed to streamline
+                                        appointment management</p>
+                                </div>
+                            </div>
+                            <!-- Item -->
+                            <div class="col-sm-6">
+                                <div class="">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/index/choose-64d4bd2244255.png"
+                                        class="icon-lg bg-success bg-opacity-10 text-success rounded-circle" alt="">
+                                    <h5 class="fw-bold text-truncate mt-2">Security &amp; Support</h5>
+                                    <p class="mb-0 text-muted text_truncation2">security and customer support are at the
+                                        forefront of our priorities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Features END -->
+
+                    </div>
+                    <!-- Right side END -->
+
+                    <!-- Left side START -->
+                    <div class="col-lg-6 position-relative">
+                        <!-- Image -->
+                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/index/choose-64d4bdb8f2992.png"
+                            class="rounded-4 w-100 position-relative" alt="">
+                    </div>
+                    <!-- Left side END -->
+                </div>
+            </div>
+        </section>
+
+        <!-------------------------------------------------- Why choose section end -------------------------------------------------->
+
+        <!------------------------------------------------ top-category section start ------------------------------------------------>
+        <section class="top-product d-none">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h5 class="fw-bold fs-3">Top Ratted Services</h5>
+                    <p class="text-font text-muted m-0">Our most loved services by users</p>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-64d625f2c6201.png"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-parking-accommodations-event-transportation-services"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">Parking Accommodations
+                                                Services</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 75,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-112"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-64d6280870f7a.png"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-construction-equipment-services"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">Construction equipment
+                                                services</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 59,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-104"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-64d62783ad8d5.png"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-video-conferencing-meeting-services"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">Video Conferencing
+                                                Meeting Services</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 189,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-103"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-64d62064e808a.png"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-photo-editing"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">Photo editing</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 80,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-74"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-641a9a6ba517a.jpg"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-freelance-services-online"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">freelance services
+                                                online</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 199,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-96"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-64d620fabf2fc.png"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-virtual-escape-games-online-services"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">virtual escape games
+                                                online services</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 149,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-97"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-64d626a9f4112.png"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-conference-and-venue-sourcing-services"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">Conference and venue
+                                                sourcing services</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 199,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-115"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card border-0 shadow rounded-4 card-body h-100 p-3">
+                            <div class="row align-items-center">
+                                <div class="col-xl-3 col-lg-5 col-md-4 col-4">
+                                    <div class="h-70px rounded-2 overflow-hidden">
+                                        <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/service/service-64d625c4cdb06.png"
+                                            class="h-70px rounded-2" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-7 col-md-8 col-8">
+                                    <div class="d-flex justify-content-between g-0 w-100">
+                                        <div class="h-50px">
+                                            <a href="https://bookingdo.paponapps.co.in/theme-2/service-financial-reconciliation-budget-services"
+                                                class="fs-18 mb-0 fw-500 text_truncation2 col-12">Financial
+                                                Reconciliation and Budget Services</a>
+                                        </div>
+                                        <p class="fw-semibold m-0 fw-semibold col-3 fs-7 text-end">
+                                            <i class="fas fa-star fa-fw text-warning"></i>
+                                            0.0
+                                        </p>
+                                    </div>
+                                    <div class="d-flex g-0 align-items-center justify-content-between">
+                                        <p class="fs-18 col-8 m-0 fw-bold">
+                                            £ 89,00
+                                        </p>
+                                        <a href="https://bookingdo.paponapps.co.in/theme-2/booking-111"
+                                            class="btn btn-primary-rgb btn-round mb-0 col-4 w-40"><i
+                                                class="fa-solid fa-arrow-right"></i></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center py-5">
+                    <a href="https://bookingdo.paponapps.co.in/theme-2/services"
+                        class="fw-semibold btn btn-primary-rgb m-0">View all<i
+                            class="mx-1 fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------- top-category section end ------------------------------------------------->
+
+        <!----------------------------------------------------- banner-section-2 ----------------------------------------------------->
+        <section class="banner-section-2 pb-5 d-none">
+            <div id="carouselExampleSlides2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a class="cursor-pointer"
+                            href="https://bookingdo.paponapps.co.in/theme-2/services?category=events-40">
+                            <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/banner/banner-64199bb990f57.jpg"
+                                class="d-block w-100 object-fit-cover"></a>
+
+                    </div>
+                    <div class="carousel-item ">
+                        <a class="cursor-pointer"
+                            href="https://bookingdo.paponapps.co.in/theme-2/service-speaker-management-and-submission-services">
+                            <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/banner/banner-64d4853364902.webp"
+                                class="d-block w-100 object-fit-cover"></a>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlides2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlides2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog-secction pb-5 d-none">
+            <div class="container">
+                <div class="text-center pb-5">
+                    <h5 class="fw-bold fs-3">Blog Post</h5>
+                    <p class="text-font text-muted m-0">Latest Blog Post</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-sm-center">
+                        <div class="card border-0 rounded-4 overflow-hidden w-100">
+                            <div class="img-overlay rounded-4">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/blog/blog-64199d330d085.jpg"
+                                    height="250" class="rounded-4 w-100 object-fit-cover" alt="...">
+                            </div>
+                            <div class="card-body px-2">
+                                <h5 class="fw-bold service-cardtitle"><a
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-what-is-lorem-ipsum-23"
+                                        class="text-dark">What is Lorem Ipsum?</a></h5>
+                                <small class="card-text text-muted m-0 blog-description">Lorem Ipsum is simply dummy
+                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                                    type a...</small>
+                            </div>
+                            <div class="card-footer border-top-0 bg-white px-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-1 fw-normal text-muted fs-7"><i
+                                            class="fa-solid fa-calendar-days me-1"></i>
+                                        21 Mar, 2023
+                                    </p>
+                                    <a class="fw-semibold text-primary-color fs-7"
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-what-is-lorem-ipsum-23">Read
+                                        More<span class="mx-1"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-sm-center">
+                        <div class="card border-0 rounded-4 overflow-hidden w-100">
+                            <div class="img-overlay rounded-4">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/blog/blog-64199d6875788.jpg"
+                                    height="250" class="rounded-4 w-100 object-fit-cover" alt="...">
+                            </div>
+                            <div class="card-body px-2">
+                                <h5 class="fw-bold service-cardtitle"><a
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-why-do-we-use-it-24"
+                                        class="text-dark">Why do we use it?</a></h5>
+                                <small class="card-text text-muted m-0 blog-description">It is a long established fact
+                                    that a reader will be distracted by the readable content of a page when looking at
+                                    its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                                    distrib...</small>
+                            </div>
+                            <div class="card-footer border-top-0 bg-white px-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-1 fw-normal text-muted fs-7"><i
+                                            class="fa-solid fa-calendar-days me-1"></i>
+                                        21 Mar, 2023
+                                    </p>
+                                    <a class="fw-semibold text-primary-color fs-7"
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-why-do-we-use-it-24">Read
+                                        More<span class="mx-1"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-sm-center">
+                        <div class="card border-0 rounded-4 overflow-hidden w-100">
+                            <div class="img-overlay rounded-4">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/blog/blog-64199da68d5b5.jpg"
+                                    height="250" class="rounded-4 w-100 object-fit-cover" alt="...">
+                            </div>
+                            <div class="card-body px-2">
+                                <h5 class="fw-bold service-cardtitle"><a
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-where-can-i-get-some-25"
+                                        class="text-dark">Where can I get some?</a></h5>
+                                <small class="card-text text-muted m-0 blog-description">There are many variations of
+                                    passages of Lorem Ipsum available, but the majority have suffered alteration in some
+                                    form, by injected humour, or randomised words which don't look even slightly
+                                    believabl...</small>
+                            </div>
+                            <div class="card-footer border-top-0 bg-white px-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-1 fw-normal text-muted fs-7"><i
+                                            class="fa-solid fa-calendar-days me-1"></i>
+                                        21 Mar, 2023
+                                    </p>
+                                    <a class="fw-semibold text-primary-color fs-7"
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-where-can-i-get-some-25">Read
+                                        More<span class="mx-1"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-flex justify-content-sm-center">
+                        <div class="card border-0 rounded-4 overflow-hidden w-100">
+                            <div class="img-overlay rounded-4">
+                                <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/blog/blog-64199dcaec4e9.jpg"
+                                    height="250" class="rounded-4 w-100 object-fit-cover" alt="...">
+                            </div>
+                            <div class="card-body px-2">
+                                <h5 class="fw-bold service-cardtitle"><a
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-where-does-it-come-from-26"
+                                        class="text-dark">Where does it come from?</a></h5>
+                                <small class="card-text text-muted m-0 blog-description">Contrary to popular belief,
+                                    Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+                                    literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                                    professo...</small>
+                            </div>
+                            <div class="card-footer border-top-0 bg-white px-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-1 fw-normal text-muted fs-7"><i
+                                            class="fa-solid fa-calendar-days me-1"></i>
+                                        21 Mar, 2023
+                                    </p>
+                                    <a class="fw-semibold text-primary-color fs-7"
+                                        href="https://bookingdo.paponapps.co.in/theme-2/blog-where-does-it-come-from-26">Read
+                                        More<span class="mx-1"><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center pt-5">
+                    <a class="fw-semibold btn btn-primary-rgb"
+                        href="https://bookingdo.paponapps.co.in/theme-2/allblogs">View All
+                        <i class=" mx-1 fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Blog section -->
+        <!---------------------------------------------------- testimonial section start ----------------------------------------------------->
+
+        <section class="bg-lights py-5">
+            <div class="container">
+                <!-- Title -->
+                <div class="text-center pb-5">
+                    <h5 class="fw-bold fs-3">Hear From Our Happy Clients</h5>
+                    <p class="text-font text-muted m-0">Customer Feedback</p>
+                </div>
+                <div id="testimonial2" class="owl-carousel owl-theme test">
+                    <div class="item h-100">
+                        <div class="card h-100 text-start rounded-4 border-0">
+                            <div class="card-body p-4">
+                                <span class="u-icon-1">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/other/cots.png"
+                                        alt="">
+                                </span>
+                                <p class="fs-6 text_truncation6 fw-normal text-muted mb-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, praesentium
+                                    sint libero eos dolor officia quaerat, delectus voluptate expedita mollitia nobis
+                                    laudantium fuga, quod quo dolorum deserunt perspiciatis amet ullam.
+                                </p>
+                                <img class="card-img-top rounded-circle u-image-1"
+                                    src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64ccb79f1ff4b.jpg"
+                                    alt="">
+                                <ul class="list-inline small mb-2">
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-regular fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-regular fa-star text-warning"></i>
+                                    </li>
+                                </ul>
+                                <h5 class="mb-2 fw-bold service-cardtitle">Olive Yew</h5>
+                                <span class="text-muted fs-7">CEO &amp; Founder, Essex Mortgage</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item h-100">
+                        <div class="card h-100 text-start rounded-4 border-0">
+                            <div class="card-body p-4">
+                                <span class="u-icon-1">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/other/cots.png"
+                                        alt="">
+                                </span>
+                                <p class="fs-6 text_truncation6 fw-normal text-muted mb-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, praesentium
+                                    sint libero eos dolor officia quaerat, delectus voluptate expedita mollitia nobis
+                                    laudantium fuga, quod quo dolorum deserunt perspiciatis amet ullam.
+                                </p>
+                                <img class="card-img-top rounded-circle u-image-1"
+                                    src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64ccb7d72044c.jpg"
+                                    alt="">
+                                <ul class="list-inline small mb-2">
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-regular fa-star text-warning"></i>
+                                    </li>
+                                </ul>
+                                <h5 class="mb-2 fw-bold service-cardtitle">Allie Grater</h5>
+                                <span class="text-muted fs-7">Insurance Broker, Brashears Insurance</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item h-100">
+                        <div class="card h-100 text-start rounded-4 border-0">
+                            <div class="card-body p-4">
+                                <span class="u-icon-1">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/other/cots.png"
+                                        alt="">
+                                </span>
+                                <p class="fs-6 text_truncation6 fw-normal text-muted mb-3">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry&#039;s standard dummy text ever since the 1500s
+                                </p>
+                                <img class="card-img-top rounded-circle u-image-1"
+                                    src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64d4bf8001ca9.jpeg"
+                                    alt="">
+                                <ul class="list-inline small mb-2">
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                </ul>
+                                <h5 class="mb-2 fw-bold service-cardtitle">Jennifer G Morales</h5>
+                                <span class="text-muted fs-7">Dietitian and Nutritionist</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item h-100">
+                        <div class="card h-100 text-start rounded-4 border-0">
+                            <div class="card-body p-4">
+                                <span class="u-icon-1">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/other/cots.png"
+                                        alt="">
+                                </span>
+                                <p class="fs-6 text_truncation6 fw-normal text-muted mb-3">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry&#039;s standard dummy text ever since the 1500s
+                                </p>
+                                <img class="card-img-top rounded-circle u-image-1"
+                                    src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64d4bf8689aac.jpeg"
+                                    alt="">
+                                <ul class="list-inline small mb-2">
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                </ul>
+                                <h5 class="mb-2 fw-bold service-cardtitle">Alicia G Sellers</h5>
+                                <span class="text-muted fs-7">Related Occupations</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item h-100">
+                        <div class="card h-100 text-start rounded-4 border-0">
+                            <div class="card-body p-4">
+                                <span class="u-icon-1">
+                                    <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/other/cots.png"
+                                        alt="">
+                                </span>
+                                <p class="fs-6 text_truncation6 fw-normal text-muted mb-3">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry&#039;s standard dummy text ever since the 1500s
+                                </p>
+                                <img class="card-img-top rounded-circle u-image-1"
+                                    src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/testimonials/testimonial-64d71a301d59b.jpeg"
+                                    alt="">
+                                <ul class="list-inline small mb-2">
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                    <li class="list-inline-item me-0 small"><i
+                                            class="fa-solid fa-star text-warning"></i>
+                                    </li>
+                                </ul>
+                                <h5 class="mb-2 fw-bold service-cardtitle">Joanne J Sharp</h5>
+                                <span class="text-muted fs-7">Education Teacher</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------------------------- testimonial section end ------------------------------------------------->
+
+        <!------------------------------------------------- app-downlode section start ------------------------------------------------->
+        <section class="d-none">
+            <div class="container">
+                <div class="row align-items-center justify-content-center py-5">
+                    <div class="col-lg-5 d-none d-lg-block position-relative">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/index/appsection-65f00fce1645f.webp"
+                                class="h-400px" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 col-md-9 m-auto z-1 text-center text-lg-start">
+                        <!-- Title -->
+                        <h3 class="fs-1 m-0 fw-bold">Download the app today &amp; experience the convenience of
+                            hassle-free online booking</h3>
+                        <p class="mb-lg-5 mb-4 mt-3">Say goodbye to the old way of scheduling and embrace the future
+                            with BookingDo!!</p>
+                        <!-- Button -->
+                        <div class="hstack justify-content-center justify-content-lg-start gap-3">
+                            <!-- Google play store button -->
+                            <a href="https://play.google.com/"> <img
+                                    src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/other/google-play.svg"
+                                    class="h-50px" alt=""> </a>
+                            <!-- App store button -->
+                            <a href="https://www.apple.com/app-store/"> <img
+                                    src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/other/app-store.svg"
+                                    class="h-50px" alt=""> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------- app-downlode section end ------------------------------------------------->
+
+        <section class="theme-2-new-product-service py-5 bg-lights">
+            <div class="container">
+                <div class="row align-items-start justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mb-xl-0">
+                        <div class="d-flex">
+                            <div class="footer-img fs-2 text-primary-color">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="footer-content px-3">
+                                <h5 class="m-0 fw-bold">Create Account</h5>
+                                <p class="fs-7 m-0 text-muted">An account is where it all start</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mb-xl-0">
+                        <div class="d-flex">
+                            <div class="footer-img fs-2 text-primary-color">
+                                <i class="fa fa-calendar-plus"></i>
+                            </div>
+                            <div class="footer-content px-3">
+                                <h5 class="m-0 fw-bold">Add Services</h5>
+                                <p class="fs-7 m-0 text-muted">You have the service in hand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mb-xl-0">
+                        <div class="d-flex">
+                            <div class="footer-img fs-2 text-primary-color">
+                                <i class="fa fa-clock"></i>
+                            </div>
+                            <div class="footer-content px-3">
+                                <h5 class="m-0 fw-bold">Start Booking</h5>
+                                <p class="fs-7 m-0 text-muted">It’s time to accept booking</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 mb-4 mb-xl-0">
+                        <div class="d-flex">
+                            <div class="footer-img fs-2 text-primary-color">
+                                <i class="fa fa-headset"></i>
+                            </div>
+                            <div class="footer-content px-3">
+                                <h5 class="m-0 fw-bold">Online Support</h5>
+                                <p class="fs-7 m-0 text-muted">24 hours a day, 7 days a week</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- back-top btn -->
+    <div class="back-top-show shadow back-top" id="backtop">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+
+    <!-- back-top btn -->
+    <!------ whatsapp_icon ------>
+    <input type="checkbox" id="check">
+    <label class="chat-btn chat-btn_rtl" for="check">
+        <i class="fa-brands fa-whatsapp comment"></i>
+        <i class="fa fa-close close"></i>
+    </label>
+
+    <div class="shadow wrapper_rtl">
+        <div class="msg_header">
+            <h6></h6>
+        </div>
+
+        <div class="text-start p-3 bg-msg">
+            <div class="card p-2 msg d-inline-block fs-7">
+                How can I help you ?
+            </div>
+        </div>
+
+        <div class="chat-form">
+
+            <form action="https://api.whatsapp.com/send" method="get" target="_blank"
+                class="d-flex align-items-center d-grid gap-2">
+                <textarea class="form-control m-0" name="text" placeholder="Your Text Message" cols="30" rows="10"
+                    required></textarea>
+                <input type="hidden" name="phone" value="919016996697">
+                <button type="submit" class="btn btn-whatsapp btn-block m-0">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <section class="footer-section bg-dark pt-5">
+        <div class="container">
+            <div class="row justify-content-between py-md-4">
+                <div class="col-lg-3 mb-4 mb-lg-0">
+                    <a href="#" class="d-flex align-items-center">
+                        <img src="./Color1.png" class="logoimage" alt="">
+                    </a>
+                    <small class="d-block mt-3 footer-description">Markaz is a complete SaaS based multi business
+                        service booking software, that gives your users the ability to create and manage bookings,
+                        services, customers, etc. Users also can create their own b...</small>
+                </div>
+                <div class="col-xl-7 col-lg-8">
+                    <div class="row justify-content-between links">
+                        <div class="col-md-4 col-lg-4 col-xl-4 col-6 mb-4 mb-sm-0">
+                            <h5 class="text-white mb-2 mb-md-4 fw-bold">Pages</h5>
+                            <ul class="footer-text">
+                                <li class="py-1"><a href="#">About
+                                        Us</a>
+                                </li>
+                                <li class="py-1"><a href="#">Contact
+                                        Us</a>
+                                </li>
+                                <li class="py-1"><a href="#">Terms &amp;
+                                        Conditions</a>
+                                </li>
+                                <li class="py-1"><a href="#">Privacy
+                                        Policy</a>
+                                </li>
+                                <li class="py-1"><a href="#">Refund Policy</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3 col-6 mb-4 mb-sm-0">
+                            <h5 class="text-white mb-2 mb-md-4 fw-bold">Link</h5>
+                            <ul class="footer-text">
+                                <li class="py-1"><a href="#">FAQs</a>
+                                </li>
+                                <li class="py-1"><a href="#">Services</a>
+                                </li>
+                                <li class="py-1"><a href="#">Categories</a>
+                                </li>
+                                <li class="py-1"><a href="#">Blog</a>
+                                </li>
+
+                                <li class="py-1"><a href="#" target="_blank">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 col-lg-5 col-xl-5 col-12 mb-4 mb-sm-0">
+                            <h5 class="text-white mb-2 mb-md-4 fw-bold">Get in Touch with Us</h5>
+                            <ul class="footer-text">
+                                <li class="py-1"><a href="tel:+919016996697" target="_blank"><i
+                                            class="fa-light fa-phone me-2"></i>+919016996697</a>
+                                </li>
+                                <li class="py-1"><a href="mailto:paponapp2244@gmail.com"><i
+                                            class="fa-regular fa-envelope me-2"></i>paponapp2244@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-end justify-content-between mt-0 mt-md-4">
+                <!-- Payment card -->
+                <div class="col-sm-7 col-md-6 col-lg-4">
+                    <h5 class="mb-2 text-white fw-bold">Payment methods &amp;
+                        Security</h5>
+                    <ul class="list-inline mb-0 mt-3">
+                        <!-- <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/cod.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/razorpay.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/stripe.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li> -->
+                        <!-- <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/flutterwave.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/paystack.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/banktransfer.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/mercadopago.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/paypal.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li> -->
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/myfatoorah.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/toyyibpay.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/paytab.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <!-- <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/phonepe.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/mollie.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/khalti.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li>
+                        <li class="list-inline-item m-0"><img
+                                src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/images/about/payment/xendit.png"
+                                class="h-30px mb-3 mb-lg-0" alt=""></li> -->
+                    </ul>
+                </div>
+
+                <!-- Social media icon -->
+                <div class="col-sm-5 col-md-6 col-lg-3 text-sm-end social-media">
+                    <h5 class="mb-2 fw-bold text-white">Follow us on</h5>
+                    <ul class="list-inline mb-0 mt-3">
+                        <li class="list-inline-item m-0"> <a class="btn-social px-2 mb-0 fb"
+                                href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a> </li>
+                        <li class="list-inline-item m-0"> <a class="btn-social px-2 mb-0 fb"
+                                href="https://www.google.com/"><i class="fa-brands fa-google"></i></a> </li>
+                        <li class="list-inline-item m-0"> <a class="btn-social px-2 mb-0 fb"
+                                href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a> </li>
+                        <li class="list-inline-item m-0"> <a class="btn-social px-2 mb-0 fb"
+                                href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+                        <li class="list-inline-item m-0"> <a class="btn-social px-2 mb-0 fb"
+                                href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a> </li>
+                    </ul>
+                </div>
+
+                <hr class="mt-4 text-white mb-0">
+            </div>
+
+            <p class="copyright-text py-3 mb-0 text-center">Copyright © Skysecretary. All Rights Reserved</p>
+        </div>
+
+
+    </section>
+
+    <!--Start of Tawk.to Script-->
+    <!-- <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65d7258a9131ed19d9700056/1hn86l9qi';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+
+    <!-- Wizz Chat -->
+    <!-- <script id="chat-init" src="https://app.wizzchat.com/account/js/init.js?id=6505747"></script> -->
+
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/jquery/jquery.min.js"></script>
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/bootstrap/bootstrap.bundle.js"></script>
+    <script
+        src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/bootstrap/bootstrap-select.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/owl.carousel.js"></script>
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/glightbox.js"></script>
+    <!-- glightbox JS -->
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/owl.carousel.min.js"></script>
+    <script
+        src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/js/sweetalert/sweetalert2.min.js"></script>
+    <!-- Sweetalert JS -->
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/js/toastr/toastr.min.js"></script>
+    <!-- Toastr JS -->
+    <script
+        src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/js/sweetalert/sweetalert2.min.js"></script>
+    <script
+        src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/js/datatables/jquery.dataTables.min.js"></script>
+    <!-- Datatables JS -->
+    <script
+        src="https://bookingdo.paponapps.co.in/storage/app/public/admin-assets/js/datatables/dataTables.bootstrap5.min.js"></script>
+    <!-- Datatables Bootstrap5 JS -->
+    <!-- wow js -->
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var are_you_sure = "Are you sure?";
+        var yes = "Yes";
+        var no = "No";
+        var wrong = "Something went wrong. Try again later.";
+        var is_logedin = 2;
+        var loginurl = "https://bookingdo.paponapps.co.in/theme-2/login";
+        toastr.options = {
+            "closeButton": true,
+        }
+    </script>
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/common.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-198831188-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-198831188-2');
+    </script>
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/sw.js"></script>
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("https://bookingdo.paponapps.co.in/storage/app/public/sw.js").then(function (reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    </script>
+
+    <script>
+        let deferredPrompt = null;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            $('.mobile_drop_down').show();
+            deferredPrompt = e;
+        });
+
+        const mobile_install_app = document.getElementById('mobile-install-app');
+        if (mobile_install_app != null) {
+            mobile_install_app.addEventListener('click', async () => {
+                if (deferredPrompt !== null) {
+                    deferredPrompt.prompt();
+                    const {
+                        outcome
+                    } = await deferredPrompt.userChoice;
+                    if (outcome === 'accepted') {
+                        deferredPrompt = null;
+
+                    }
+                }
+            });
+        }
+        $('.nav02').click(function () {
+            $('.mobile_drop_down').animate({
+                bottom: "-100vh"
+            }, 200);
+        });
+        $(document).ready(function () {
+            window.addEventListener('beforeinstallprompt', (e) => {
+                $('.install-app-btn-container').show();
+                $('.mobile_drop_down').animate({
+                    bottom: "0px"
+                }, 200);
+                deferredPrompt = e;
+            });
+
+        });
+    </script>
+    <script>
+
+    </script>
+    <script>
+        var direction = "ltr";
+    </script>
+    <script src="https://bookingdo.paponapps.co.in/storage/app/public/front/js/index.js"></script>
+</body>
+
+</html>

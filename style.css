@@ -1,0 +1,76 @@
+:root{
+    --bs-primary:#EF4623 !important;
+}
+.navbar-nav .active{
+    color: #EF4623 !important;
+}
+.sp-booknow{
+    border: 1px solid #EF4623;
+    color: #EF4623;
+    text-align: center;
+    padding: .5rem 1rem;
+    border-radius: 18px;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.sp-booknow:hover{
+    background-color: #EF4623;
+    color: #FFF;
+}
+.sp-priceWrap .price{
+    color: #3F8C68;
+}
+.sp-priceWrap .text{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sp-prvPrice{
+    color: rgba(0, 0, 0, 0.79);
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.color-green{
+    color: #55a455;
+}
+.color-red{
+    color: red !important;
+}
+.priceListWrap li .text , .sp-priceListSecWrap li .text{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.sp-priceListSecWrap p{
+    color: black;
+    font-weight: 600;
+}
+.sp-banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 500;
+    padding: .3rem .5rem;
+    border-bottom-left-radius: 16px;
+    background-color: #EF4623;
+    color: #FFF;
+    z-index: 1;
+}
+.sp-fillterWrap button{
+    color: var(--bs-primary);
+    background-color: transparent;
+    border: 1px solid #EF4623;
+    padding: .5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.sp-fillterWrap button:hover{
+    background-color: #EF4623;
+    color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sp-fillterWrap .sp-btn{
+    background-color: #EF4623;
+    color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
