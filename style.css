@@ -1,6 +1,7 @@
 :root {
     --bs-primary: #EF4623 !important;
 }
+
 .logoimage {
     height: 50px;
 }
@@ -115,15 +116,43 @@
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-50%);
     }
 }
 
-.service-div .card{
+.service-div .card {
     padding: 1rem !important;
 }
 
-.service-div .card img{
+.service-div .card img {
     height: 125px;
 }
+
+.podcastCardWrap {
+    column-count: 4;
+    column-gap: 10px;
+}
+
+.podcastCard {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+
+}
+
+.podcastCard img {
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+}
+
+.podcastCardWrap>.podcastCard {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
