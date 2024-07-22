@@ -119,3 +119,11 @@
         transform: translateX(-50%);
     }
 }
+
+.service-div .card{
+    padding: 1rem !important;
+}
+
+.service-div .card img{
+    height: 125px;
+}
