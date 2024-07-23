@@ -156,3 +156,15 @@
     grid-column: 1;
 }
 
+@media only screen and (max-width: 600px) {
+    .podcastCardWrap {
+        column-count: 2;
+        column-gap: 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .podcastCardWrap {
+        column-count: 3;
+        column-gap: 10px;
+    }
+}
