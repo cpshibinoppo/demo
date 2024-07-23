@@ -103,7 +103,7 @@
 
 .marquee {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
     animation: marquee 15s linear infinite;
 }
