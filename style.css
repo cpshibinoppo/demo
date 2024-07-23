@@ -186,3 +186,20 @@
         column-gap: 10px;
     }
 }
+.equipmentCard img{
+    border-radius: 16px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1.5rem;
+    max-width: 266px;
+    min-width: 266px;
+    min-height: 280px;
+    max-height: 280px;
+    object-fit: contain;
+}
+.equipmentCard p{
+    margin-top: .7rem;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
