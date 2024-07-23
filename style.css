@@ -141,6 +141,7 @@
     grid-template-rows: 1fr auto;
     margin-bottom: 10px;
     break-inside: avoid;
+    position: relative;
 
 }
 
@@ -154,6 +155,23 @@
 .podcastCardWrap>.podcastCard {
     grid-row: 1 / -1;
     grid-column: 1;
+}
+.podcastCard i{
+    visibility: hidden;
+    color: #FF0000;
+    position: absolute;
+    font-size: 32px;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.434);
+}
+.podcastCard:hover i{
+    visibility: visible;
+    transition: all 0.5s ease;
+
 }
 
 @media only screen and (max-width: 600px) {
